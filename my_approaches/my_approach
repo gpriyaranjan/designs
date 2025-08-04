@@ -1,0 +1,47 @@
+
+Clarifying questions
+---------- ---------
+1. Give a few examples
+   - Perhaps will converge on a single use-case to save time
+
+2. Context
+
+   - Is there already a product in the world? 
+   - Is there already a product in the org?
+   - If not, prefer functionality scalability over infrastructure scalability
+
+   - What are the components for which system and programming expertise is available in-house, 
+     or in the ecosystem
+   - After we make technology choice, is it useful in other areas of the company
+
+3. API
+
+   - For the purpose of this discussion, 
+     do we assume very simple APIs, and use it as an example to show scaling?
+
+   - Or do we take some more complications, and brainstorm how it may be done in the real world?
+
+4. Scaling
+   - Sharded scaling 
+   - Cassandra scale vs Postgres scale
+   - 
+5a. Microservices with data splitting
+   - Entity Id and critical data held by one microservice
+   - Other portions of entity held by other microservices
+
+5b. Microservices with common data schema
+   - Flexible schemas like MongoDb
+   - Support certain versions of the schema
+
+6. OLTP
+   - Transaction types, Locking etc
+
+7. Crucial metrics
+   - Application Health Metrics
+   - System Health Metrics
+
+8. Logging
+   - Compliance / Audit
+   - Security
+
+9. Self healing
